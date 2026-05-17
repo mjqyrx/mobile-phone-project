@@ -1,0 +1,78 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "DunHuangFont";
+  src: local("KaiTi"), local("STKaiti"), local("SimSun");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --dunhuang-yellow: #e6c292;    
+  --dunhuang-red: #c54c38;       
+  --dunhuang-blue: #2a5274;      
+  --dunhuang-brown: #8c5a3b;     
+  --dunhuang-light: #f8f1e4;     
+  --dunhuang-dark: #3a271c;      
+}
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background: var(--dunhuang-light);
+  color: var(--dunhuang-dark);
+  line-height: 1.6;
+}
+
+
+header {
+  background: var(--dunhuang-dark);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+header nav a {
+  color: var(--dunhuang-yellow);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+header nav a:hover {
+  color: var(--dunhuang-red);
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  min-height: 70vh;
+}
+footer {
+  background: var(--dunhuang-dark);
+  color: var(--dunhuang-light);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 1.5rem;
+}
